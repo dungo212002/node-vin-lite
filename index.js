@@ -1,7 +1,7 @@
 const vinRegex           = /^([0-9A-HJ-NPR-Z]{9})([A-HJ-NPR-TV-Y1-9])([0-9A-HJ-NPR-Z])([0-9A-HJ-NPR-Z]{2}\d{4})$/,
       continents         = require('./db/continents'),
       countries          = require('./db/countries'),
-      modelyears         = require('./db/modelyears'),
+      modelyears         = require('./db/modelyears.json'),
       manufacturers      = require('./db/manufacturers'),
       manufacturerInfo   = require('./lib/manufacturerInfo'),
       manufacturersIndex = require('./db/manufacturersIndex.json'),
@@ -34,8 +34,6 @@ module.exports = {
    decode: function decode (vin, hasDecodeManufacturerInfo = false) {
       vin = vin.toUpperCase();
       let result = {}, wmi = vin.substr(0,3);
-
-      if (vinRegex.test(vin)) {
          result = {
             wmi: wmi,
             vds: vin.substr(3,6),
@@ -47,6 +45,7 @@ module.exports = {
             manufacturer: manufacturers[wmi],
             modelYear: modelyears[vin[9]]
          };
+         
          if (hasDecodeManufacturerInfo) {
             for (let manufacturerIndex in manufacturersIndex) {
                if (manufacturersIndex[manufacturerIndex].indexOf(wmi) != -1) {
@@ -54,11 +53,6 @@ module.exports = {
                }
             }
          }
-      } else {
-         result = {
-            error: "VIN code is incorrect"
-         }
-      }
       return result;
    },
 
