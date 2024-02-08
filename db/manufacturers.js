@@ -115,6 +115,8 @@ module.exports = {
     "5TN": "Toyota USA - trucks",
     "JS3": "Suzuki",
     "WDB": "Mercedes-Benz",
+    "W1V": "Mercedes-Benz",
+    "W1T": "Mercedes-Benz",
     "3N0": "Nissan Mexico",
     "W0L": "Opel",
     "MMM": "Chevrolet Thailand",
@@ -344,6 +346,7 @@ module.exports = {
     "JN6": "Nissan",
     "TK9": "SOR (Czech Republic)",
     "WEB": "Evobus GmbH (Mercedes-Bus)",
+    "WKK": "Setra EvoBus GmbH",
     "3NY": "Nissan Mexico",
     "NM0": "Ford Turkey",
     "4TY": "Toyota",
@@ -1167,6 +1170,12 @@ module.exports = {
     "Z7Y": '"Artan", Nizhny Novgorod, Russia',
     "Z9Z": 'OOO "United Auto Group", Izhevsk, Russia',
     "X89": 'Little xUSSR factories',
-    "Y39": 'Little xUSSR factories'
-
+    "Y39": 'Little xUSSR factories',
+    "XLE": 'Scania Trucks, Netherlands',
+    "XNL": 'VDL Bus, Netherlands',
+    "XMG": 'VDL Bus, Netherlands',
+    "ZCF": 'Iveco, Italy',
+    "ZGA": 'Iveco, Italy',
+    "WJM": 'IVECO-Magirus AG',
+    "XLR": 'DAF Trucks, Netherlands',
 };
