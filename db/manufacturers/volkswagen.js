@@ -98,7 +98,7 @@ const wmi = [ 'WVW', 'WVG', 'WV1', 'WV2', 'WV3', 'VWV', 'AAV', '1VW', '1V1', '3V
         '7': 'Ludwigsfelde, Germany (Mercedes-Benz)',
         '8': 'Dresden, Germany or General Pacheco, Argentina'
       },
-      modelYears = require('../modelyears'),
+      modelYears = require('../modelyears.json'),
       rangeYearSelector = require('../../lib/rangeYearSelector');
 
 // Source: http://www.clubvw.org.au/vwvin
