@@ -211,7 +211,7 @@ const wmi = [ 'YV1', 'YV2', 'YV3', 'YV4', '4V1', '4V2', '4V3', '4V4', '4V5', '4V
         'M': 'PVÖ 53'
     },
 
-    modelYears = require('../modelyears'),
+    modelYears = require('../modelyears.json'),
     rangeYearSelector = require('../../lib/rangeYearSelector');
 
 // Source: https://en.wikibooks.org/wiki/Vehicle_Identification_Numbers_(VIN_codes)/Volvo/VIN_Codes
