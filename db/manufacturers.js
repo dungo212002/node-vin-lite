@@ -1178,4 +1178,5 @@ module.exports = {
     "ZGA": 'Iveco, Italy',
     "WJM": 'IVECO-Magirus AG',
     "XLR": 'DAF Trucks, Netherlands',
+    "WDF": "Mercedes-Benz"
 };
